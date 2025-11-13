@@ -16,3 +16,14 @@ If you are developing a production application, we recommend using TypeScript wi
 
 TalentHub adalah aplikasi web berbasis React.js + Vite yang dirancang untuk menghubungkan Job Seeker, Job Provider (Perusahaan), dan Admin dalam satu sistem terpadu.
 Aplikasi ini memungkinkan pencarian pekerjaan, pengelolaan lowongan, pelacakan lamaran, serta manajemen akun dan laporan pengguna secara efisien.
+
+| Kategori               | Teknologi                         |
+| ---------------------- | --------------------------------- |
+| **Frontend**           | React.js (Vite)                   |
+| **Routing**            | React Router DOM                  |
+| **Styling**            | Tailwind CSS / CSS Modules        |
+| **Ikon**               | Lucide-react / React-icons        |
+| **State Management**   | React Hooks (useState, useEffect) |
+| **Layout Management**  | Custom Layout Components          |
+| **Linting**            | ESLint                            |
+| **Backend (opsional)** | Flask / Node.js / Laravel         |
