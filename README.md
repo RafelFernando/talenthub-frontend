@@ -32,59 +32,82 @@ Aplikasi ini menyediakan fitur pencarian pekerjaan, manajemen lowongan, profil p
 
 ---
 
-## 📁 Struktur Folder
-src/
-│
-├── components/
-│ ├── Admin/
-│ │ ├── DashboardAdmin.jsx
-│ │ ├── RolesAdmin.jsx
-│ │ ├── JobProviderAdmin.jsx
-│ │ ├── JobSeekerAdmin.jsx
-│ │ ├── JobPostingAdmin.jsx
-│ │ ├── FiturPremiumAdmin.jsx
-│ │ ├── ReportAdmin.jsx
-│ │ ├── LaporanUserAdmin.jsx
-│ │ ├── NotifikasiAdmin.jsx
-│ │ └── Layout/
-│ │ └── AdminLayout.jsx
-│ │
-│ ├── provider/
-│ │ ├── ProviderDashboard.jsx
-│ │ ├── ProfilPerusahaan.jsx
-│ │ ├── LowonganPekerjaan.jsx
-│ │ ├── PelamarPekerjaan.jsx
-│ │ ├── KebijakanPrivasi.jsx
-│ │ ├── SyaratDanKetentuan.jsx
-│ │ ├── layout/
-│ │ │ └── ProviderLayout.jsx
-│ │ └── Profil/
-│ │ ├── EditDataDiri.jsx
-│ │ └── EditKataSandi.jsx
-│ │
-│ ├── JobSeekerUser/
-│ │ ├── DashboardSeeker.jsx
-│ │ ├── CvSeeker.jsx
-│ │ ├── LamaranSaya.jsx
-│ │ ├── PekerjaanDisimpan.jsx
-│ │ ├── Profil/
-│ │ │ ├── EditDataDiri.jsx
-│ │ │ ├── EditKataSandi.jsx
-│ │ │ └── EditBiodata.jsx
-│ │ └── Layout/
-│ │ └── UserLayout.jsx
-│
-├── pages/
-│ ├── BerandaPage.jsx
-│ ├── CariPekerjaanPage.jsx
-│ ├── KontakPage.jsx
-│ ├── TentangPage.jsx
-│ ├── DetailPekerjaanPage.jsx
-│ ├── NotFoundPage.jsx
-│ └── Auth/
-│ ├── Login.jsx
-│ └── Registrasi.jsx
-│
-├── App.jsx
-└── main.jsx
+
+---
+
+## 🧭 Routing Aplikasi
+
+Aplikasi menggunakan **React Router DOM** dengan sistem multi-role.  
+Berikut pembagian route berdasarkan role:
+
+---
+
+### 🏠 **Umum (Public)**
+
+| Path | Komponen |
+|------|-----------|
+| `/` | BerandaPage |
+| `/CariPekerjaan` | CariPekerjaanPage |
+| `/Tentang` | TentangPage |
+| `/Kontak` | KontakPage |
+| `/pekerjaan/:id` | DetailPekerjaanPage |
+| `/Auth/Registrasi` | Registrasi |
+| `/Auth/Login` | Login |
+| `*` | NotFoundPage |
+
+---
+
+### 🔐 **Admin**
+
+Semua halaman admin dibungkus dengan **`<AdminLayout>`**.
+
+| Path | Komponen |
+|------|-----------|
+| `/Admin` | AdminLogin |
+| `/Admin/Dashboard` | DashboardAdmin |
+| `/Admin/Roles` | RolesAdmin |
+| `/Admin/JobProvider` | JobProviderAdmin |
+| `/Admin/JobSeeker` | JobSeekerAdmin |
+| `/Admin/JobPosting` | JobPostingAdmin |
+| `/Admin/FiturPremium` | FiturPremiumAdmin |
+| `/Admin/ReportAdmin` | ReportAdmin |
+| `/Admin/LaporanUser` | LaporanUserAdmin |
+| `/Admin/Notifikasi` | NotifikasiAdmin |
+
+---
+
+### 🏢 **Job Provider (Perusahaan)**
+
+Semua halaman provider dibungkus dengan **`<ProviderLayout>`**.
+
+| Path | Komponen |
+|------|-----------|
+| `/Provider/Dashboard` | ProviderDashboard |
+| `/Provider/ProfilPerusahaan` | ProfilPerusahaan |
+| `/Provider/LowonganPekerjaan` | LowonganPekerjaan |
+| `/Provider/PelamarPekerjaan` | PelamarPekerjaan |
+| `/Provider/EditDataDiri` | EditDataDiri |
+| `/Provider/EditKataSandi` | EditKataSandi |
+| `/Provider/KebijakanPrivasi` | KebijakanPrivasi |
+| `/Provider/SyaratKetentuan` | SyaratDanKetentuan |
+
+---
+
+### 👤 **Job Seeker (Pencari Kerja)**
+
+Semua halaman seeker dibungkus dengan **`<UserLayout>`**.
+
+| Path | Komponen |
+|------|-----------|
+| `/Seeker/Dashboard` | DashboardSeeker |
+| `/Seeker/CV` | CvSeeker |
+| `/Seeker/LamaranSaya` | LamaranSaya |
+| `/Seeker/PekerjaanDisimpan` | PekerjaanDisimpan |
+| `/Seeker/EditDataDiri` | EditDataDiriSeeker |
+| `/Seeker/EditKataSandi` | EditKataSandiSeeker |
+| `/Seeker/EditBiodata` | EditBiodata |
+| `/Seeker/KebijakanPrivasi` | KebijakanPrivasi |
+| `/Seeker/SyaratKetentuan` | SyaratDanKetentuan |
+
+---
 
