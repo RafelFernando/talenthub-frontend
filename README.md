@@ -47,4 +47,59 @@ Lihat template TypeScript resmi Vite
 | **State Management**   | React Hooks (useState, useEffect) |
 | **Layout Management**  | Custom Layout Components          |
 | **Linting**            | ESLint                            |
-| **Backend (opsional)** | Flask / Node.js / Laravel         |
+
+src/
+│
+├── components/
+│   ├── Admin/
+│   │   ├── DashboardAdmin.jsx
+│   │   ├── RolesAdmin.jsx
+│   │   ├── JobProviderAdmin.jsx
+│   │   ├── JobSeekerAdmin.jsx
+│   │   ├── JobPostingAdmin.jsx
+│   │   ├── FiturPremiumAdmin.jsx
+│   │   ├── ReportAdmin.jsx
+│   │   ├── LaporanUserAdmin.jsx
+│   │   ├── NotifikasiAdmin.jsx
+│   │   └── Layout/
+│   │       └── AdminLayout.jsx
+│   │
+│   ├── provider/
+│   │   ├── ProviderDashboard.jsx
+│   │   ├── ProfilPerusahaan.jsx
+│   │   ├── LowonganPekerjaan.jsx
+│   │   ├── PelamarPekerjaan.jsx
+│   │   ├── KebijakanPrivasi.jsx
+│   │   ├── SyaratDanKetentuan.jsx
+│   │   ├── layout/
+│   │   │   └── ProviderLayout.jsx
+│   │   └── Profil/
+│   │       ├── EditDataDiri.jsx
+│   │       └── EditKataSandi.jsx
+│   │
+│   ├── JobSeekerUser/
+│   │   ├── DashboardSeeker.jsx
+│   │   ├── CvSeeker.jsx
+│   │   ├── LamaranSaya.jsx
+│   │   ├── PekerjaanDisimpan.jsx
+│   │   ├── Profil/
+│   │   │   ├── EditDataDiri.jsx
+│   │   │   ├── EditKataSandi.jsx
+│   │   │   └── EditBiodata.jsx
+│   │   └── Layout/
+│   │       └── UserLayout.jsx
+│
+├── pages/
+│   ├── BerandaPage.jsx
+│   ├── CariPekerjaanPage.jsx
+│   ├── KontakPage.jsx
+│   ├── TentangPage.jsx
+│   ├── DetailPekerjaanPage.jsx
+│   ├── NotFoundPage.jsx
+│   └── Auth/
+│       ├── Login.jsx
+│       └── Registrasi.jsx
+│
+├── App.jsx
+└── main.jsx
+
