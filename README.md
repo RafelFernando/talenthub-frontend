@@ -12,11 +12,32 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 "# talenthub-frontend" 
 
-💼 TalentHub Frontend — Platform Pencarian & Manajemen Pekerjaan
+# 💼 TalentHub Frontend — Platform Pencarian & Manajemen Pekerjaan
 
 TalentHub adalah aplikasi web berbasis React.js + Vite yang dirancang untuk menghubungkan Job Seeker, Job Provider (Perusahaan), dan Admin dalam satu sistem terpadu.
 Aplikasi ini memungkinkan pencarian pekerjaan, pengelolaan lowongan, pelacakan lamaran, serta manajemen akun dan laporan pengguna secara efisien.
 
+#⚡ React + Vite
+
+Proyek ini dibangun menggunakan Vite untuk kecepatan build dan pengembangan.
+
+Vite menyediakan konfigurasi minimal agar React dapat berjalan dengan Hot Module Replacement (HMR) dan beberapa aturan ESLint bawaan.
+
+Plugin yang Digunakan:
+
+@vitejs/plugin-react
+ → menggunakan Babel
+ untuk Fast Refresh.
+
+@vitejs/plugin-react-swc
+ → menggunakan SWC
+ untuk Fast Refresh.
+
+Jika kamu mengembangkan aplikasi production, disarankan menggunakan TypeScript dengan aturan lint berbasis tipe.
+Lihat template TypeScript resmi Vite
+ dan panduan typescript-eslint
+.
+# 🚀 Teknologi yang Digunakan
 | Kategori               | Teknologi                         |
 | ---------------------- | --------------------------------- |
 | **Frontend**           | React.js (Vite)                   |
